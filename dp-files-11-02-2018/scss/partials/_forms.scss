@@ -1,0 +1,109 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+
+  .error-wrapper {
+    width: 890px;
+    margin-bottom: 4rem;
+  }
+}
+
+.form-error {
+  font-weight: bold;
+  color: #d9534f;
+  border: solid 1px #d9534f;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: lighten(#d9534f, 35%);
+}
+
+form, .form {
+  .form-group.has-danger {
+    p {
+      background: #d9534f;
+      color: white;
+      text-align: left;
+      height: 30px;
+      padding: 4px 22px;
+    }
+  }
+}
+
+.react-datepicker-white-background {
+  background-color: white;
+  width: 100%;
+
+  .react-date-picker__button {
+    border: none;
+    width: 100%;
+
+    .react-date-picker__button__input {
+      padding-left: 12px;
+    }
+
+    input.react-date-picker__button__input__input {
+      padding: 12px 0px;
+      text-align: center;
+      width: 44px;
+    }
+  }
+}
+
+// Form group with option hint
+.form-group {
+  .input-with-option {
+    position: relative;
+
+    .link-option {
+      color: #262626;
+      font-size: 1.125rem;
+      line-height: 1.2rem;
+      position: absolute;
+      right: 15px;  top: calc(50% - 8.5px);
+    }
+  }
+
+  // margin sizes
+  &.form-group-sm {
+    margin-bottom: 10px;
+  }
+
+  &.form-group-lg {
+    margin-bottom: 25px;
+  }
+}
+
+
+/* especial container for date-range controls */
+.date-range-control {
+  display: flex;
+  flex-wrap: wrap;
+
+  .ctrl-range-from,
+  .ctrl-range-to,
+  .middle-text {
+    display: block;
+    float: left;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  span {
+    width: 40px;
+    text-align: center;
+  }
+
+  .ctrl-range-from,
+  .ctrl-range-to {
+    width: calc((100% - 40px) / 2);
+  }
+
+  .middle-text {
+    padding-top: 12px;
+    text-align: center;
+  }
+}

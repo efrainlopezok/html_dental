@@ -1,0 +1,157 @@
+// Buttons
+.btn {
+	border-width: 3px;
+	border-radius: 0px;
+	padding: 18px 10px;
+	min-width: 200px;
+	min-height: 60px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+
+    // button sizes
+	&.btn-lg {
+		height: 70px;
+	}
+
+  &.btn-md {
+    font-size: 18px;
+    font-weight: 600;
+    height: 60px;
+    padding: 15px 23px 10px;
+  }
+
+    &.btn-sm { // 46px
+      font-size: 1rem;
+      line-height: 1.2em;
+      min-height: 46px;
+      padding: 10.5px 10px;
+      min-width: 152px;
+    }
+
+    &.btn-xs {
+      font-weight: bold;
+      font-size: 0.8125rem;
+      line-height: 1.2em;
+      min-height: 46px;
+      padding: 13px 10px 10px;
+      min-width: 152px;
+    } 
+
+    // button colors
+	&.btn-orange {
+		background-color: #ff6c00;
+		border-color: #ff6c00;
+		color: #fff;
+
+        &.btn-trans-bg {
+          color: #ff6c00;
+        }
+    }
+    &.btn-gray {
+        background-color: #d4d4d4;
+        border-color: #d4d4d4;
+        color: #fff;
+        img {
+            max-height: 21px;
+        }
+    }
+    &.btn-white {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+        img {
+            max-height: 21px;
+        }
+    }
+    &.btn-green-bg {
+      background-color: #83bf23;
+      border-color: #83bf23;
+      color: #fff;
+    }
+
+    &.btn-trans-bg {
+      background-color: transparent !important;
+	}
+
+  &.btn-disabled {
+    border-color: rgba(#262626, 0.2) !important;
+    margin-bottom: 0 !important;
+  }
+
+  &.btn-full-width {
+    min-width: auto !important;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+// Buttons with icons
+.btn.with-icon {
+  img, i.fa {
+    margin-right: 15px;
+    position: relative;
+    top: -3px;
+    vertical-align: middle;
+  }
+
+  i.fa {
+    font-size: 24px;
+  }
+  
+}
+
+// quadratic buttons used for icons only
+.btn.btn-quad {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+
+  i.fa {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform: translate(-50%, -50%);
+
+    &.fa-big-text {
+      font-size: 1.625rem;
+    }
+  }
+
+  // sizes
+  &.btn-md {
+    min-width: 60px;
+  }
+
+  //@todo add sizes to match sm xs and lg heights
+
+  // colors for avoid colision with existing clases
+  &.quad-green { 
+    background-color: #83bf23;
+    border-color: #83bf23;
+
+    &.btn-o { color: #83bf23; }
+  }
+
+  &.quad-red {
+    background-color: #9e0b0f;
+    border-color: #9e0b0f;
+
+    &.btn-o { color: #9e0b0f; }
+  }
+
+  &.quad-gray {
+    background-color: #cccccc;
+    border-color: #cccccc;
+
+    &.btn-o { color: #707070; }
+  }
+
+  &.btn-o {
+    background-color: transparent;
+  }
+
+}

@@ -1,0 +1,552 @@
+.step-controller {
+    h1 {
+        font-weight: 100;
+        font-size: 36px;
+    }
+}
+
+@mixin step-title($color) {
+    .step-title {
+        background-color: $color;
+        padding: 40px 10px;
+        h2 {
+            color: #fff;
+            font-weight: bold;
+            font-family: $font-family;
+            font-size: 21px;
+            margin: 0 auto;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+.employer {
+    @include step-title($employer-dark);
+}
+
+.job-seeker {
+    @include step-title($job-seeker-dark);
+}
+
+.post-job {
+    @include step-title($post-job-dark);
+}
+
+.step-forms {
+    form, div.form {
+        max-width: 70%;
+        margin: 0 auto;
+        input,
+        select {
+            padding: 12px 22px;
+            border: 1px solid #cccccc;
+            border-radius: 0px;
+            font-size: 16px;
+            color: #8b8b8b;
+            font-family: $font-family;
+            height: 60px !important;
+        }
+        button.btn-primary {
+            border: 0px;
+            cursor: pointer;
+            background-color: #ff6700;
+            width: 100%;
+            color: #fff;
+            border-radius: 0px;
+            padding: 22px 22px;
+            font-size: 22px;
+            text-transform: uppercase;
+            &:hover {
+                background-color: #f18e4b;
+            }
+            margin-bottom: 22px;
+            &.paypal {
+                background-color: white;
+                border-color: #139ad6;
+                border: 3px solid #139ad6;
+                padding: 15px 22px;
+            }
+        }
+        .already-registered {
+            a {
+                font-weight: 600;
+            }
+        }
+        &.full-width{
+            max-width: 100%;
+        }
+    }
+}
+
+.step-text {
+    max-width: 300px;
+    h5 {
+        margin-bottom: 25px;
+    }
+    p {
+        line-height: 25px;
+    }
+}
+
+@mixin stage-container {
+    padding: 15px 0px 4px;
+    max-width: 100%;
+    margin: 0 auto;
+    .stage {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        min-height: 112px;
+        &:before,
+        &:after {
+            position: absolute;
+            background-color: #ccc;
+            top: 47%;
+            margin-top: -33px;
+            width: 50%;
+            height: 9px;
+            border-top: 2.45px solid #ccc;
+            border-bottom: 2.45px solid #ccc;
+            content: '';
+        }
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+        &:first-child:before {
+            display: none;
+        }
+        .head-icon-pro:after {
+            content: url('../images/step2-icon.png');
+            top: 6px;
+            position: relative;
+        }
+        .head-icon-address:after {
+            content: url('../images/step3-icon.png');
+            top: 6px;
+            position: relative;
+        }
+        .head-icon-package:after {
+            content: url('../images/step-package.png');
+            position: relative;
+            top: 6px;
+        }
+        .head-icon-details:after {
+            content: url('../images/step-details.png');
+            position: relative;
+            top: 6px;
+        }
+        .head-icon-creditcard:after {
+          content: url('../images/step-creditcard.png');
+          position: relative;
+          top: 6px;
+        }
+    }
+    .last-stage {
+        &:after {
+            display: none;
+        }
+    }
+    // Current
+    .stage.tmm-current {
+        .stage-header {
+            background-color: #83bf23;
+            border: none;
+        }
+        .head-number {
+            color: #fff;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, .9);
+        }
+        &:after,
+        &:before {
+            width: 47%;
+            height: 9px;
+            border-top: 4px solid #ccc;
+            border-bottom: 4px solid #ccc;
+            background-color: #fff;
+        }
+        &:before {
+            background-color: #92cf5c;
+            border-top: 4px solid #92cf5c;
+            border-bottom: 4px solid #92cf5c;
+        }
+        .head-icon-account:after {
+            content: url('../images/step1-icon.png');
+            top: 10px;
+            position: relative;
+        }
+        .head-icon-pro:after {
+            content: url('../images/step2-icon-white.png');
+            top: 10px;
+        }
+        .head-icon-pro:after {
+            content: url('../images/step2-icon-white.png');
+            top: 10px;
+        }
+        .head-icon-address:after {
+            content: url('../images/step3-icon-white.png');
+            top: 13px;
+            position: relative;
+        }
+        .head-icon-role:after {
+            content: url('../images/step-role.png');
+            top: 12px;
+            position: relative;
+        }
+        .head-icon-package:after {
+            content: url('../images/step-package-white.png');
+            top: 11px;
+        }
+        .head-icon-details:after {
+            content: url('../images/step-details-white.png');
+            top: 10px;
+        }
+        .head-icon-creditcard:after {
+          content: url('../images/step-creditcard-white.png');
+          top: 8px;
+        }
+        .stage-title {
+            font-weight: bold;
+        }
+    }
+
+    .stage.tmm-current-after {
+        &:before {
+            width: 47%;
+            height: 9px;
+            background-color: #fff;
+            border-top: 4px solid #ccc;
+            border-bottom: 4px solid #ccc;
+        }
+        .head-icon-details:after {
+            content: url(../images/step3-bell.png);
+        }
+    }
+
+    //Success stage
+    .stage.tmm-success {
+        .stage-header {
+            background-color: #92cf5c;
+            border: none;
+            .stage-container .stage.tmm-success .stage-header.head-number:after {
+                top: 42px;
+            }
+        }
+        .head-icon-ok:after {
+            content: url(../images/icon-ok.png);
+            position: relative;
+            top: 10px;
+        }
+        .head-number {
+            color: #3c611b;
+            text-shadow: 1px 1px 0px rgba(173, 219, 114, 1);
+        }
+        .head-icon-address:after {
+            content: url('../images/step3-icon-white.png');
+            top: 13px;
+            position: relative;
+        }
+        &:after,
+        &:before {
+            background-color: #92cf5c;
+            width: 47%;
+            height: 9px;
+            border-top: 4px solid #ccc;
+            border-bottom: 4px solid #ccc;
+            background-color: #fff;
+        }
+        &:after {
+            position: absolute;
+            top: 53px;
+            color: #696969;
+            font-size: 16px;
+            color: #92cf5c;
+            background-color: #92cf5c;
+            border-top: 4px solid #92cf5c;
+            border-bottom: 4px solid #92cf5c;
+            text-shadow: none;
+            font-weight: 100;
+        }
+        &:before {
+            background-color: #92cf5c;
+            border-top: 4px solid #92cf5c;
+            border-bottom: 4px solid #92cf5c;
+        }
+    }
+    // End Success
+    .stage-header {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #ccc;
+        text-align: center;
+        font-size: 20px;
+        color: #a9a9a9;
+        border: 1px solid #ccc;
+        position: relative;
+        z-index: 1;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    .head-number {
+        color: #a9a9a9;
+        font-weight: bold;
+        color: #a9a9a9;
+        font-weight: bold;
+        line-height: 2.2em;
+        margin-bottom: 7px;
+    }
+    .stage-content {
+        width: 153px;
+        padding-left: 17px;
+        max-height: 52px;
+        margin: 0 auto;
+    }
+    .align-left {
+        padding-left: 50px;
+    }
+    .align-center {
+        .stage-title,
+        .stage-info {
+            text-align: center;
+        }
+    }
+    .align-right {
+        padding-right: 50px;
+        .stage-title,
+        .stage-info {
+            text-align: right;
+        }
+    }
+    .stage-title {
+        padding-left: 0px;
+        text-align: left;
+        font-size: 18px;
+        padding-top: 14px;
+    }
+    .stage-info {
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+.job-seeker {
+    .stage-container {
+        @include stage-container;
+
+        .stage.tmm-current{
+            .stage-header {
+                background-color: $job-seeker-dark;
+            }
+        }
+
+        .stage.tmm-current {
+            &:before {
+                background-color: $job-seeker-light;
+                border-top: 4px solid $job-seeker-light;
+                border-bottom: 4px solid $job-seeker-light;
+            }
+        }
+
+        .stage.tmm-success {
+            .stage-header {
+                background-color: $job-seeker-light;
+            }
+            &:after {
+                color: $job-seeker-light;
+                background-color: $job-seeker-light;
+                border-top: 4px solid $job-seeker-light;
+                border-bottom: 4px solid $job-seeker-light;
+            }
+            &:before {
+                background-color: $job-seeker-light;
+                border-top: 4px solid $job-seeker-light;
+                border-bottom: 4px solid $job-seeker-light;
+            }
+        }
+    }
+}
+
+.employer, .post-job {
+    .stage-container {
+        @include stage-container;
+
+        .stage.tmm-current {
+            .stage-header {
+                background-color: $employer-dark;
+            }
+        }
+
+
+        .stage.tmm-current {
+            &:before {
+                background-color: $employer-light;
+                border-top: 4px solid $employer-light;
+                border-bottom: 4px solid $employer-light;
+            }
+        }
+
+        .stage.tmm-success {
+            .stage-header {
+                background-color: $employer-light;
+            }
+            &:after {
+                color: $employer-light;
+                background-color: $employer-light;
+                border-top: 4px solid $employer-light;
+                border-bottom: 4px solid $employer-light;
+            }
+            &:before {
+                background-color: $employer-light;
+                border-top: 4px solid $employer-light;
+                border-bottom: 4px solid $employer-light;
+            }
+        }
+    }
+}
+
+.form-section {
+    margin-bottom: 40px;
+
+    h5 {
+        margin-bottom: 20px;
+
+        span {
+            font-weight: normal;
+        }
+    }
+     h6 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .bg-gray {
+        padding: 20px;
+    }
+    table tr td {
+        padding-right: 30px;
+        vertical-align: text-bottom;
+    }
+    label {
+        font-size: 16px;
+        margin-bottom: 0;
+        position: relative;
+    }
+    input[type="checkbox"] + label:before {
+        content: "\f00c";
+        width: 32px;
+        height: 32px;
+        border: 1px solid #ced4da;
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+        font-family: FontAwesome;
+        text-align: center;
+        color: white;
+        line-height: 28px;
+    }
+    input[type=checkbox]:checked+label:before {
+        border: 1px solid #82bf22;
+        color: #82bf22;
+        box-shadow: inset 1px 1px 0px #82bf22, inset -1px -1px 0px #82bf22;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+}
+.sidebar {
+    .card.card-gray:hover {
+        border-color: #dedede;
+    }
+    .card-body {
+        padding: 30px 20px 20px !important;
+
+        img {
+            margin-bottom: 15px;
+        }
+        h6 {
+            font-size: 12px;
+            color: #383838;
+        }
+        h5 {
+            font-size: 17.38px;
+        }
+    }
+    .card-content {
+        padding: 30px 20px 20px;
+        border-top: 3px solid #dedede;
+
+        .price {
+            font-size: 59px;
+            color: #83bf23;
+            border-bottom: 1px dashed #262626;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            color: #747474;
+            font-size: 13px;
+            line-height: 25px;
+        }
+    }
+}
+
+.idea {
+    position: relative;
+    padding-left: 50px;
+
+    &:before {
+        content: url(../images/icon-idea-blue.png);
+        position: absolute;
+        left: 0;
+        top: 6px;
+    }
+}
+
+.bootstrap-select.show>.dropdown-menu>.dropdown-menu {
+    display: block;
+    li.hidden {
+        display: none;
+    }
+    li a {
+        display: block;
+        width: 100%;
+        padding: 3px 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: #292b2c;
+        text-align: inherit;
+        white-space: nowrap;
+        background: 0 0;
+        border: 0;
+    }
+}
+
+.bootstrap-select {
+    .dropdown-toggle {
+        background-color: transparent;
+        border: 0px solid #cccccc;
+        border-radius: 0px;
+        padding: 12px 22px;
+        margin-right: 0px;
+        text-align: left;
+        &:after {
+            margin-left: 0px;
+        }
+    }
+    .dropdown-menu {
+        border: 1px solid #cccccc;
+        border-radius: 0px;
+    }
+}

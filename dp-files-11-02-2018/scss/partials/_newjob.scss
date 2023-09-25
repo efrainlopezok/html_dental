@@ -1,0 +1,202 @@
+.stage-container {
+    &.full-width {
+        max-width: 100%;
+    }
+}
+
+
+/* Utilities */
+
+.container.container-md {
+    max-width: 940px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.pt-12 {
+    margin-top: -8.65rem;
+    padding-top: 12px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.bl-2 {
+    border-left: 1px solid #e5e5e5;
+}
+
+.bg-green2 {
+    background-color: #00bbb9;
+}
+
+
+/*Card extensions*/
+
+.right-border {
+    position: relative;
+    &:after {
+        content: '';
+        width: 2px;
+        height: 90%;
+        border-right: 2px solid #dedede;
+        position: absolute;
+        right: 5%;
+        top: 0px;
+    }
+}
+
+.card {
+    &.card-gray {
+        border: 3px solid #dedede;
+        &:hover {
+            border-color: #ff6700;
+        }
+        &.card-mk:hover .card-body h4 {
+            color: inherit;
+        }
+    }
+    &.card-fix-w {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .job-position {
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .work-time {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &.empty-card {
+        border-color: transparent;
+        @media screen and (max-width: 480px) {
+            border-bottom: 2px solid #e5e5e5;
+            margin-bottom: 30px;
+            border-radius: 0;
+            img {
+                max-width: 49px;
+                margin-bottom: 0;
+                float: left;
+            }
+        }
+    }
+}
+
+.card-grid .card {
+    height: 100%;
+}
+
+.border-box {
+    border: 3px solid #dedede;
+    padding: 24px 30px 38px;
+    @media screen and (max-width: 480px) {
+        border: 0 none;
+        padding: 0;
+    }
+}
+
+
+/* Stage container extension */
+
+.stage-container {
+    .stage {
+        &.tmm-current2:before {
+            color: #92cf5c;
+            background-color: #92cf5c;
+            border-top: 4px solid #92cf5c;
+            border-bottom: 4px solid #92cf5c;
+        }
+        &.tmm-current2:after {
+            border-top: 4px solid #ccc;
+            border-bottom: 4px solid #ccc;
+            background-color: #fff;
+        }
+    }
+}
+
+
+/* Step select job type */
+
+.job-type-step {
+    form {
+        max-width: none;
+        padding-left: 50px;
+    }
+    .empty-card {
+        padding-top: 50px;
+        img {
+            margin-bottom: 35px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .col-md-8.bl-2 {
+            border-left: 0 none;
+        }
+        .empty-card {
+            padding-top: 0;
+        }
+        form {
+            padding-left: 0;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .row-space {
+            margin-bottom: 35px;
+        }
+        form h5 {
+            text-align: center;
+        }
+    }
+}
+
+
+/*Step location*/
+
+.job-step-location {
+    @media screen and (min-width: 481px) {
+        .step-text br {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .card {
+            border: 0 none;
+            max-width: none;
+            border-bottom: 2px solid #e5e5e5;
+            margin-bottom: 30px;
+            .card-body {
+                padding: 0;
+                img {
+                    padding-left: 15px;
+                }
+                h4 {
+                    padding-left: 130px;
+                }
+            }
+        }
+        .step-forms form,
+        .step-text {
+            max-width: none;
+        }
+    }
+}
+
+.right-content {
+    margin-left: 8.33%;
+}

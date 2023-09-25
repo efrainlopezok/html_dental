@@ -1,0 +1,74 @@
+.hero-terms {
+    background-image: url("../images/terms-hero.png");
+}
+
+ol.order-list {
+    counter-reset: li;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    li {
+        p {
+            margin-left: 30px;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 500 !important;
+        }
+        &:before {
+            counter-increment: li;
+            content: counter(li);
+            color: $color-site;
+            font-weight: bold;
+            position: absolute;
+        }
+    }
+}
+
+.terms-wrap {
+    margin-bottom: 135px;
+   
+    @media screen and (max-width: 991px) {
+        margin-bottom: 90px;
+    }
+    @media screen and (max-width: 767px) {    
+        margin-bottom: 62px;
+        
+        .hero-privacy{
+            background-image: url("../images/privacy-mob.png");
+        }
+        .container {
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: left;
+            .big-text{
+                font-size: 16px;
+                line-height: 30px;
+            }
+            .big-heading{
+                h2{
+                    font-size:24px;
+                    margin-bottom: 40px;
+                    margin-top: 36px;
+                }
+                
+            }
+        }
+        .hero-title {
+            padding: 75px 80px;
+            margin-bottom: 50px;
+            h1 {
+                font-size: 48px;
+                line-height: 48px;
+            }
+        }
+    }
+    @media screen and (max-width: 350px) {
+        .hero-terms{
+            background-position: -390px;
+        }
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

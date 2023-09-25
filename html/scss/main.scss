@@ -1,0 +1,78 @@
+// Variables
+@import "partials/variables";
+
+// Mixins
+@import "partials/mixins";
+
+// Base
+@import "partials/base";
+
+// Nav
+@import "partials/nav";
+
+//Footer
+@import "partials/footer";
+
+// Home
+@import "partials/home";
+
+// Steps
+@import "partials/steps";
+
+// Forms
+@import "partials/forms";
+
+// Buttons
+@import "partials/buttons";
+
+// Other components
+@import "components/module";
+
+// Login
+@import "partials/login";
+
+// New job Steps
+@import "partials/newjob";
+
+// Pages
+@import "partials/pages/footer-home";
+
+// Home
+@import "partials/pages/home";
+
+// Contact
+@import "partials/pages/contact";
+
+// Privacy policy
+@import "partials/pages/privacypolicy";
+//Terms
+@import "partials/pages/terms";
+// 404
+@import "partials/pages/404";
+
+// Profile
+@import "partials/pages/profile";
+
+// Dashboard
+@import "partials/pages/dashboard";
+
+// dashboard employer
+@import "partials/pages/dashboardemployer";
+
+// dashboard job seeker
+@import "partials/pages/jobseeker";
+
+// Job post Resume search
+@import "partials/pages/resumesearch";
+
+// Dashboard jobseeker pages
+@import "partials/pages/dashboardjobseeker";
+
+// Responsive
+@import "partials/responsive";
+
+@import "components/ant";
+@import "partials/responsive";
+
+//about page
+@import "partials/pages/about";

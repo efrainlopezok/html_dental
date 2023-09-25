@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dental Post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Fonts awesome -->
+    <link href="../vendor/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/main.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="header navbar fixed-top navbar-toggleable-md navbar-inverse bg-white">
+        <div class="container">
+
+            <a class="navbar-brand logo" href="../index.html">
+                <img src="../images/logo2.png" alt="Dental Post" />
+            </a>
+            <ul class="hidden-lg-up mobile-menu">
+                <li>
+                    <button class="navbar-search" type="button" data-toggle="collapse" data-target="#search-collapse" aria-expanded="false" aria-controls="search-collapse">
+                    <i class="fa fa-search"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                                <span class="navbar-toggler-icon"></span>
+                         </button>
+                </li>
+            </ul>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav primary-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav primary-nav hidden-lg-up">
+                  <li class="nav-item"><a class="nav-link" href="#"><strong>My Account</strong></a></li>
+                  <li class="nav-item"><a class="nav-link active" href="">Post Jobs</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Resume Search</a></li>
+                  <li class="nav-item"><a class="nav-link disabled" href="#">Resources</a></li>
+                </ul>
+            </div>
+            <!-- Search -->
+            <div id="search-collapse" class="col-lg-4 input-search collapse navbar-collapse">
+                <input class="form-control rounded-0 py-2" type="search" placeholder="Search" id="example-search-input">
+                <span class="input-group-btn">
+                  <button class="btn btn-outline-secondary" type="button">
+                      <i class="fa fa-search"></i>
+                  </button>
+                </span>
+            </div>
+            <!-- End search -->
+        </div>
+    </nav>
+    <div class="secondary-nav-wrap hidden-md-down">
+        <div class="container">
+            <ul class="nav secondary-nav" data-clone-to="#navbarSupportedContent">
+                <li class="nav-item"><a class="nav-link" href="#"><strong>My Account</strong></a></li>
+                <li class="nav-item"><a class="nav-link active" href="newjob-step1a.html">Post Jobs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Resume Search</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="#">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="site-inner profile py-0">
+      <div class="rsearch-page rsearch-home">
+        <div class="top-page-heading">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <h1>Search Resumes</h1>
+            </div>
+            <div class="col-lg-8 col-12 heading-toolbar">
+              <a href="" class="btn btn-green-bg with-icon" data-toggle="modal" data-target="#modalPostJob">
+                <img src="../images/pages/resume/icon-post-job.png" alt="post a job">
+                Post a Job
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- inner main division without site-inner-wrap -->
+        <div class="row inner-main inner-main-unwrap">
+            <div class="col-lg-3 col-12 inner-sidebar filter-content">
+                <div class="filter-header filter-header-gc">
+                    <h4 class="hidden-md-down"><i class="fa fa-tasks"></i>FILTER</h4>
+                    <small class="hidden-md-down">Use the filter boxes to<br> narrow your search</small>
+                    <a href="#collapseFilters" class="hidden-lg-up" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFilters">
+                      <h4><i class="fa fa-angle-right"></i>FILTER</h4>
+                      <small>Use the filter boxes to<br> narrow your search</small>
+                    </a>
+                </div>
+
+                <div class="filter-element collapse" id="collapseFilters">
+                    <form class="form-pay">
+                        <div class="form-row row">
+                            <div class="form-group form-group-sm pt-3 col-12 col-sm-12">
+                                <select id="op_type" name="op_type" class="form-control">
+                                    <option value="permanent">Opening Type</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="form-group form-group-sm col-12">
+                                <input type="text" id="location" name="location" placeholder="Location">
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="form-group form-group-sm col-12">
+                                <input type="text" id="position" name="position" placeholder="Position">
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="form-group form-group-sm col-12">
+                                <select name="distance" class="form-control">
+                                    <option value="distance">Distance</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="form-group form-group-sm col-12 col-sm-12">
+                              <select name="eval" class="form-control">
+                                <option value="Evaluation">Evaluation</option>
+                              </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row row">
+                            <div class="form-group form-group-lg col-12">
+                                <input type="text" id="keyword" name="keyword" placeholder="Keywork (Specialty)">
+                            </div>
+                        </div>
+
+                        <div class="form-row row form-section mb-0">
+                            <div class="form-group form-group-sm col-12 col-sm-12">
+                                <input type="checkbox" id="photo" name="photo" checked>
+                                <label for="photo">Photo Available</label>
+                            </div>
+
+                            <div class="form-group form-group-sm col-12 col-sm-12">
+                                <input type="checkbox" id="disc_assessment" name="disc_assessment">
+                                <label for="disc_assessment">DISC Assessment</label>
+                            </div>
+
+                            <div class="form-group form-group-sm col-12 col-sm-12">
+                                <input type="checkbox" id="cal_assessment" name="cal_assessment">
+                                <label for="cal_assessment">Values Assessment</label>
+                            </div>
+
+                            <div class="form-group form-group-sm col-12 col-sm-12">
+                                <input type="checkbox" id="skill_assesment" name="diskill_assesmentsc">
+                                <label for="skill_assesment">Skills Assessment</label>
+                            </div>
+
+                            <div class="form-group form-group-lg col-12 col-sm-12">
+                                <input type="checkbox" id="culture_assessment" name="culture_assessment">
+                                <label for="culture_assessment">Culture Assessment</label>
+                            </div>
+                        </div>
+
+                        <div class="form-bottom">
+                            <button type="submit" class="btn btn-orange mx-0">Filter Resumes</button>
+                        </div>
+                        <div class="form-section">
+                          <div class="form-group  text-center">
+                              <a href="#">Reset Filters</a>
+                          </div>
+                        </div>
+                    </form>
+
+                    <div class="filter-option-head filter-opt-head-gc hidden-lg-up">
+                      <div class="row">
+                          <div class="filter-result-count col-lg-3 col-12">
+                              <span>Results: <strong>234</strong></span>
+                          </div>
+                          <div class="filter-sort-by col-lg-6 col-7">
+                              <div class="sort-by-contenetor">
+                                  <div class="filter-by" data-filter="relevance">Relevance</div>
+                                  <div class="filter-by active" data-filter="date">Date</div>
+                                  <span>Sort By: </span>
+                              </div>
+                          </div>
+                          <div class="filter-view-type col-lg-3 col-5">
+                              <div class="view-type-contenetor">
+                                  <div class="filter-view active" data-filter="list"><i class="fa fa-map-marker"></i></div>
+                                  <div class="filter-view" data-filter="marker"><i class="fa fa-list-ul"></i></div>
+                                  <span>View: </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+            <!-- Inner content -->
+            <div class="col-lg-9 col-12 inner-content bg-gray">
+
+
+                <!-- Page Content -->
+                <div class="filter-option-head filter-opt-head-gc hidden-md-down">
+                    <div class="row">
+                        <div class="filter-result-count col-lg-3">
+                            <span>Results: <strong>234</strong></span>
+                        </div>
+                        <div class="filter-sort-by col-lg-6 col-7">
+                            <div class="sort-by-contenetor">
+                                <span>Sort By: </span>
+                                <div class="filter-by" data-filter="relevance">Relevance</div>
+                                <div class="filter-by active" data-filter="date">Date</div>
+                            </div>
+                        </div>
+                        <div class="filter-view-type col-lg-3 col-5">
+                            <div class="view-type-contenetor">
+                                <span>View: </span>
+                                <div class="filter-view active" data-filter="list"><i class="fa fa-map-marker"></i></div>
+                                <div class="filter-view" data-filter="marker"><i class="fa fa-list-ul"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-space">
+                    <div class="box-content result-search-box dashboard-profile media-side-box">
+                        <div class="top-toolbar toolbar-right">
+                            <i class="fa fa-star-o favorite"></i>
+                        </div>
+                        <div class="row media-fix-header">
+                            <div class="col-lg-3 profile-image">
+                                <img src="../images/pages/resume/person1.jpg" alt="Gloria Chavez " class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 flex-profile profile-info">
+                                <div class="row heading-profile">
+                                  <div class="col-lg-8 col-12">
+                                    <h4>Gloria Chavez 
+                                      <small>Chicago, Illinois 60661 - 25 miles</small>
+                                    </h4>
+                                  </div>
+                                  <div class="col-lg-4 col-12 heading-side">
+                                    Thu, 31 Aug 2017
+                                  </div>
+                                </div>
+                                
+                                <p class="hidden-md-down">Lorem ipsum dolor sit amet, consect porttitor ultrices e porttitor ultrices e etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua...</p>
+                                <div class="profile-attr-wrap hidden-md-down">
+                                  <ul class="profile-attr ">
+                                    <li>Job Type: <strong>Perm</strong></li>
+                                    <li>Specialty: <strong>Prosthodontic</strong></li>
+                                    <li>Days of Week: <strong>M, T, W, T, F</strong></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-attr-wrap hidden-lg-up">
+                          <ul class="profile-attr ">
+                            <li>Job Type: <strong>Perm</strong></li>
+                            <li>Specialty: <strong>Prosthodontic</strong></li>
+                            <li>Days of Week: <strong>M, T, W, T, F</strong></li>
+                          </ul>
+                        </div>
+                        <p class="hidden-lg-up mb-0">Lorem ipsum dolor sit amet, consect porttitor ultrices e porttitor ultrices e etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua...</p>
+                    </div>
+
+                    <div class="box-content result-search-box dashboard-profile media-side-box" style="min-height: 200px;">
+                        <div class="job-applied hidden-md-down"></div>
+                        <div class="job-applied-rotate hidden-md-down"><i class="fa fa-check-square-o"></i> Applied</div>
+                        <div class="top-toolbar toolbar-right">
+                            <i class="fa fa-star favorite"></i></div>
+                        <div class="row media-fix-header">
+                            <div class="col-lg-3 profile-image">
+                                <img src="../images/pages/resume/person2.jpg" alt="Gloria" class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 flex-profile profile-info">
+                                <div class="row heading-profile">
+                                  <div class="col-lg-8 col-12">
+                                    <h4>Gloria Chavez 
+                                      <small>Chicago, Illinois 60661 - 25 miles</small>
+                                    </h4>
+                                  </div>
+                                  <div class="col-lg-4 col-12 heading-side">
+                                    Thu, 31 Aug 2017
+                                  </div>
+                                </div>
+                                
+                                <p class="hidden-md-down">Lorem ipsum dolor sit amet, consect porttitor ultrices e porttitor ultrices e etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua...</p>
+                                <div class="profile-attr-wrap hidden-md-down">
+                                  <div class="icon-mark-right"><i class="fa fa-check-circle"></i></div>
+                                  <ul class="profile-attr ">
+                                    <li>Job Type: <strong>Perm</strong></li>
+                                    <li>Specialty: <strong>Prosthodontic</strong></li>
+                                    <li>Days of Week: <strong>M, T, W, T, F</strong></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-attr-wrap hidden-lg-up">
+                          <ul class="profile-attr ">
+                            <li>Job Type: <strong>Perm</strong></li>
+                            <li>Specialty: <strong>Prosthodontic</strong></li>
+                            <li>Days of Week: <strong>M, T, W, T, F</strong></li>
+                          </ul>
+                        </div>
+                        <p class="hidden-lg-up mb-0">Lorem ipsum dolor sit amet, consect porttitor ultrices e porttitor ultrices e etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua...</p>
+                    </div>
+
+                    <div class="box-content result-search-box dashboard-profile media-side-box" style="min-height: 200px;">
+                        <div class="top-toolbar toolbar-right">
+                            <i class="fa fa-star favorite selected"></i></div>
+                        <div class="row media-fix-header">
+                            <div class="col-lg-3 profile-image">
+                                <img src="../images/pages/resume/person3.jpg" alt="Gloria Chavez" class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 flex-profile profile-info">
+                                <div class="row heading-profile">
+                                  <div class="col-lg-8 col-12">
+                                    <h4>Gloria Chavez 
+                                      <small>Chicago, Illinois 60661 - 25 miles</small>
+                                    </h4>
+                                  </div>
+                                  <div class="col-lg-4 col-12 heading-side">
+                                    Thu, 31 Aug 2017
+                                  </div>
+                                </div>
+                                
+                                <p class="hidden-md-down">Lorem ipsum dolor sit amet, consect porttitor ultrices e porttitor ultrices e etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua...</p>
+                                <div class="profile-attr-wrap hidden-md-down">
+                                  <ul class="profile-attr ">
+                                    <li>Job Type: <strong>Perm</strong></li>
+                                    <li>Specialty: <strong>Prosthodontic</strong></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-attr-wrap hidden-lg-up">
+                          <ul class="profile-attr ">
+                            <li>Job Type: <strong>Perm</strong></li>
+                            <li>Specialty: <strong>Prosthodontic</strong></li>
+                          </ul>
+                        </div>
+                        <p class="hidden-lg-up mb-0">Lorem ipsum dolor sit amet, consect porttitor ultrices e porttitor ultrices e etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua...</p>
+                    </div>
+
+                    <div class="load-element">
+                        <a href="#" class="btn btn-white">Load More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div> <!-- /. rsearch-page -->
+
+      <!-- Modals -->
+      <!-- Post job modal -->
+      <div class="modal fade common-modal modal-md" id="modalPostJob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="title-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search Resumes or Post Job?</h5>
+                <p class="subhead-line">Lorem Ipsum Dolor Sit Amet</p>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <div class="row gutter-20 hidden-md-down">
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card card-title-box">
+                    <header>
+                      <h4>Search Resumes</h4>
+                    </header>
+                    <div class="card-body text-center">
+                      <picture>
+                        <img src="../images/icon2.png" height="121px">
+                      </picture>
+                      <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adip</h6>
+                      <a href="" class="btn btn-orange">SELECT</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card card-title-box">
+                    <header>
+                      <h4>Post Jobs</h4>
+                    </header>
+                    <div class="card-body text-center">
+                      <picture>
+                        <img src="../images/icon3.png" height="118px">
+                      </picture>
+                      <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adip</h6>
+                      <a href="" class="btn btn-orange">SELECT</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card card-title-box">
+                    <header>
+                      <h4>Have it All</h4>
+                    </header>
+                    <div class="card-body text-center">
+                      <picture>
+                        <img src="../images/icon4.png" height="111px">
+                      </picture>
+                      <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adip</h6>
+                      <a href="" class="btn btn-orange">SELECT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center hidden-md-down">
+                <a href="javascript:;" class="link-lg black-link">View all packages</a>
+              </div>
+
+              <div id="searchResumePostCarousel" class="carousel slide dental-carousel d-carousel-2 hidden-lg-up" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#searchResumePostCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#searchResumePostCarousel" data-slide-to="1"></li>
+                  <li data-target="#searchResumePostCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                      <div class="card card-title-box mx-auto">
+                        <header>
+                          <h4>Search Resumes</h4>
+                        </header>
+                        <div class="card-body text-center">
+                          <picture>
+                            <img src="../images/icon2.png" height="121px">
+                          </picture>
+                          <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adip</h6>
+                          <a href="" class="btn btn-orange">SELECT</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <div class="card card-title-box mx-auto">
+                        <header>
+                          <h4>Post Jobs</h4>
+                        </header>
+                        <div class="card-body text-center">
+                          <picture>
+                            <img src="../images/icon3.png" height="118px">
+                          </picture>
+                          <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adip</h6>
+                          <a href="" class="btn btn-orange">SELECT</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <div class="card card-title-box mx-auto">
+                        <header>
+                          <h4>Have it All</h4>
+                        </header>
+                        <div class="card-body text-center">
+                          <picture>
+                            <img src="../images/icon4.png" height="111px">
+                          </picture>
+                          <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adip</h6>
+                          <a href="" class="btn btn-orange">SELECT</a>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+                <a class="carousel-control carousel-control-prev" href="#searchResumePostCarousel" role="button" data-slide="prev" style="padding-bottom: 45px;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control carousel-control-next" href="#searchResumePostCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+
+                <div class="carousel-bottom text-center">
+                  <a href="javascript:;" class="link-lg black-link">View all packages</a>
+                </div>
+              </div> <!-- /. carousel -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /. modals -->
+
+    </div> <!-- /. site inner -->
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark-gray">
+        <div class="container">
+            <p class="m-0 text-center text-black">Copyright &copy;2017 Dental Post, Inc. - All rights reserved.</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script>
+        // (function() {
+        //     "use strict";
+        //     window.addEventListener("load", function() {
+        //         var form = document.getElementById("needs-validation");
+        //         form.addEventListener("submit", function(event) {
+        //             if (form.checkValidity() == false) {
+        //                 event.preventDefault();
+        //                 event.stopPropagation();
+        //             }
+        //             form.classList.add("was-validated");
+        //         }, false);
+        //     }, false);
+        // }());
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <script src="../vendor/bootstrap/js/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap-select.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

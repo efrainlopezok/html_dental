@@ -1,0 +1,176 @@
+
+/*  Carousels
+********************/
+
+/* EXtension to dental carousel with extras and bottom content area added */
+.dental-carousel.d-carousel-2 {
+  padding-bottom: 60px;
+
+  .carousel-control {
+    // control white and improvement
+    background-color: #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 35px;
+    top: auto;
+    bottom: 30px;
+    display: block;
+    padding: 0 !important;
+    position: absolute;
+    opacity: 1;
+    text-align: center;
+    z-index: 30;
+
+    >span:first-child {
+      background: transparent;
+      border-radius: 0;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 10px 6px 0;
+      border-color: transparent #f2f2f2 transparent transparent;
+      position: relative;
+      top: 7px;  left: -2px;
+    }
+    >span:last-child {
+      display: none;
+    }
+
+    &:hover {
+      background-color: #ff6700;
+
+      >span:first-child {
+        border-left-color: #f2f2f2;
+      }
+    }
+
+    &.carousel-control-next {
+      >span:first-child {
+        left: 2px;
+        transform: rotate(180deg);
+      }  
+    }
+
+    // small carousel controls
+    &.c-control-sm {
+      min-width: 24px;
+      width: 24px;
+      height: 24px;
+
+      span:first-child {
+        top: 2px;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      background-color: transparent;
+
+      &.active {
+        background-color: #ff6700;
+      }
+    }
+  }
+
+  .carousel-bottom {
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    width: 100%;
+  }
+
+  // variation with controls centered horizontally, bottom content between controls and aligned vertically with controls
+  &.dc2-controls-center {
+    padding-bottom: 36px;
+
+    .carousel-control {
+      background-color: $color-site;
+      bottom: auto;
+      left: 50%;
+      top: calc(100% - 10px);
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+
+    .carousel-control-prev {
+      transform: translate(calc(-50% - 62px), -50%);
+    }
+
+    .carousel-control-next {
+      right: auto;
+      transform: translate(calc(-50% + 62px), -50%);
+    }
+
+    .carousel-bottom {
+      bottom: 2px;
+    }
+  }
+
+}
+
+/* Common carousel with top side links (used on index-v1) */
+.common-carousel {
+
+  .carousel-inner {
+    padding-bottom: 35px;
+  }
+
+  .carousel-item {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .carousel-control {
+    background-color: transparent;
+    border: 3px solid #dedede;
+    border-left-width: 0;
+    top: 0;
+    width: 40px;
+    height: 190px;
+    opacity: 1;
+
+    span:first-child {
+      background: transparent;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 12px 7px 0;
+      border-color:  transparent #ff6700 transparent transparent;
+    }
+
+    &.carousel-control-next {
+      border-left-width: 3px;
+      border-right-width: 0;
+
+      span:first-child {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+
+    li {
+      border-radius: 50%;
+      border: 1px solid #ff6700;
+      max-width: 8px;
+      width: 8px;
+      height: 8px;
+
+      &:not(.active) {
+        background-color: transparent;
+      }
+
+      &.active {
+        background-color: #ff6700;
+      }
+    }
+  }
+
+}

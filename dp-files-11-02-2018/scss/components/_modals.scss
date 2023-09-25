@@ -1,0 +1,330 @@
+
+/* Modal customization
+ ***********************/
+ .modal {
+  z-index: 2110;
+ }
+
+/* dashboard modal */
+
+.modal.dash-modal {
+
+  .modal-dialog {
+    margin-top: 90px;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: 0 none;
+  }
+
+  .modal-header {
+    background-size: cover;
+    background-position: center;
+    min-height: 141px;
+    position: relative;
+
+    &.btm-arrow {
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 16.5px 14px 16.5px;
+        border-color: transparent transparent #ffffff transparent;
+        position: absolute;
+        top: calc(100% - 13px);
+        left: calc(50% - 16.5px);
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 40px 40px 49px;
+    max-height: calc(100vh - 270px);
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .main-content {
+      padding: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .title-header {
+
+    h5 {
+      color: #fff;
+      font-weight: normal;
+      font-size: 3.125rem; //50px;
+      line-height: 1.2em;
+    }
+
+    p.subhead-line {
+      color: #a5e938;
+      font-size: 1rem;
+    }
+  }
+
+  button.close {
+    position: absolute;
+    opacity: 1;
+    top: 16px; right: 19px;
+    width: 44px;  height: 44px;
+
+    span {
+      display: none;
+    }
+
+    &:before {
+      background: url(../images/dashboard/close-modal.png) scroll 0 0 no-repeat;
+      background-size: 100% auto;
+      content: "";
+      display: block;
+      width: 44px;  height: 44px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .modal-body {
+      padding: 30px 20px 39px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .modal-header {
+      min-height: 128px;
+    }
+
+    .modal-dialog {
+      margin-top: 40px;
+    }
+
+    .modal-body {
+      max-height: calc(100vh - 240px);
+    }
+
+    .title-header {
+      h5 {
+        font-size: 1.875rem;
+      }
+
+      p.subhead-line {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .modal-body {
+      padding: 20px 12px 30px;
+    }
+
+    .title-header {
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+
+    button.close {
+      top: 8px; right: 8px;
+      width: 30px;  height: 30px;
+
+      &:before {
+        width: 30px;  height: 30px;
+      }
+    }
+  }
+}
+
+/* Size of modals */
+
+.modal {
+  &.modal-lg {
+    max-width: none;
+
+    .modal-dialog {
+      max-width: 1024px;
+    }
+  }
+
+  &.modal-md {
+    max-width: none;
+
+    .modal-dialog {
+      max-width: 945px;
+    }
+  }
+
+  @media only screen and (max-width: 1044px) {
+    &.modal-lg {
+      .modal-dialog {
+        max-width: calc(100% - 20px);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 965px) {
+    &.modal-md {
+      .modal-dialog {
+        max-width: calc(100% - 20px);
+      }
+    }
+  }
+}
+
+/* Global modal overlay */
+
+.modal-backdrop.show {
+  opacity: 0.2;
+  z-index: 2100;
+}
+
+
+/* Common modal (used in resume-search/index-v1.html) */
+
+.modal.common-modal {
+  
+  .modal-dialog {
+    margin-top: 220px;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: 0 none;
+  }
+
+  .modal-header {
+    border: 0 none;
+    padding: 32px 54px 10px;
+    background-color: #fff;
+    min-height: 130px;
+    position: relative;
+  }
+
+  .title-header {
+    h5 {
+      font-size: 2.125rem;
+      font-weight: 600;
+    }
+
+    p.subhead-line {
+      font-size: 01.125rem;
+      font-weight: normal;
+      margin-bottom: 0;
+      position: relative;
+      top: -6px;
+    }
+  }
+
+  button.close {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    top: -22px; right: -22px;
+    width: 44px;  height: 44px;
+    text-align: center;
+
+    span {
+      display: none;
+    }
+
+    &:before {
+      background: url(../images/pages/resume/close-modal.png) scroll 0 0 no-repeat;
+      background-size: 100% auto;
+      content: "";
+      display: inline-block;
+      width: 16px;  height: 16px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .modal-body {
+    background-color: #f2f2f2;
+    padding: 30px 54px;
+
+    max-height: calc(100vh - 230px);
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .modal-dialog {
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: calc(100% - 30px);
+    }
+
+    &.modal-md .modal-dialog {
+      width: 945px;
+    }
+
+    .modal-header {
+      padding: 16px 25px 11px;
+      display: block;
+      min-height: 112px;
+    }
+
+    .title-header {
+      h5 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        margin-bottom: 13px;
+      }
+
+      p.subhead-line {
+        font-size: 0.875rem;
+        text-align: center;
+      }
+    }
+
+    button.close {
+      top: -12px;   right: -13px;
+      width: 37px;  height: 37px;
+
+      &:before {
+        width: 13px;  height: 13px;
+        position: relative;
+        top: -2px;
+      }
+    }
+
+    .modal-body {
+      padding: 16px 25px 25px;
+    }
+
+  }
+
+  @media screen and (max-width: 340px) {
+
+    .modal-dialog {
+      margin-top: 70px;
+    }
+
+    .modal-header {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .modal-body {
+      max-height: calc(100vh - 200px);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+}

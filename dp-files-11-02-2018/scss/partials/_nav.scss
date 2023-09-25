@@ -1,0 +1,98 @@
+#navbarSupportedContent {
+    a {
+        font-size: 18px;
+        color: #262626;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .primary-nav {
+        padding-left: 40px;
+        padding-left: 2.5rem;
+        .nav-item {
+            a {
+                padding: 0px 20px;
+                position: relative;
+                &:after {
+                    content: '';
+                    border-right: 2px solid #e1e1e1;
+                    position: absolute;
+                    height: 18px;
+                    width: 1px;
+                    right: 0px;
+                    top: 4px;
+                }
+                &:hover {
+                    color: $color-site;
+                }
+            }
+            .active {
+                color: $color-site;
+            }
+            &:last-child {
+                a {
+                    &:after {
+                        border: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logo img {
+    max-width: 160px;
+}
+
+.input-search {
+    input[type=search] {
+        border-right: 0px;
+        padding-top: .7rem!important;
+        padding-bottom: .7rem!important;
+        &:focus {
+            border-left: 1px solid rgba(0, 0, 0, .15);
+            border-right: 0px;
+            border-bottom: 1px solid rgba(0, 0, 0, .15);
+            border-top: 1px solid rgba(0, 0, 0, .15);
+        }
+    }
+    .btn {
+        border-left: 0px;
+        border-right: 1px solid rgba(0, 0, 0, .15);
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+        border-top: 1px solid rgba(0, 0, 0, .15);
+        border-radius: 0px;
+        padding: .7rem .75rem;
+        i {
+            color: #e1e1e1;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.mobile-menu li {
+    list-style: none;
+}
+
+// Seconday nav
+.secondary-nav-wrap {
+    background-color: #00bbb9;
+    margin-top: 126px;
+}
+
+.secondary-nav {
+    .nav-link {
+        border-right: 1px solid #009795;
+        color: #fff;
+        display: inline-block;
+        font-size: 21px;
+        font-weight: normal;
+        height: 80px;
+        padding: 25px 25px 0;
+        text-decoration: none;
+
+        &.active {
+            background-color: #00a8a6;
+        }
+    }
+}

@@ -1,0 +1,523 @@
+@media (max-width: 1279px) {
+    #navbarSupportedContent {
+        a {
+            font-size: 16px;
+        }
+        .primary-nav .nav-item a:after {
+            height: 16px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    #navbarSupportedContent {
+        a {
+            font-size: 14px;
+        }
+        .primary-nav .nav-item a {
+            padding: 0px 15px;
+            &:after {
+                height: 14px;
+            }
+        }
+    }
+    .logo img {
+        max-width: 140px;
+    }
+    .login-form {
+        form {
+            padding-left: 0;
+        }
+        .create-account {
+            padding-right: 0;
+        }
+    }
+    .secondary-nav-wrap {
+        margin-top: 114px;
+    }
+}
+
+@media (max-width: 1072px) {
+    #navbarSupportedContent .primary-nav {
+        padding-left: 20px;
+        padding-left: 1.25rem;
+        .nav-item a {
+            padding: 0px 15px;
+        }
+    }
+    .logo img {
+        max-width: 120px;
+    }
+    .secondary-nav-wrap {
+        margin-top: 101px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        #navbarSupportedContent {
+            .primary-nav {
+                padding-left: 0px;
+                .nav-item {
+                    a {
+                        padding: 12px 15px;
+                        color: #fff;
+                        &:after {
+                            display: none;
+                        }
+                        &:hover {
+                            background-color: #ff8f43;
+                        }
+                    }
+                }
+            }
+        }
+        padding: 0px;
+        .logo {
+            img {
+                max-width: 120px;
+                padding-left: 14px;
+                padding-top: 2px;
+            }
+        }
+        .navbar-brand {
+            padding-bottom: 0px;
+        }
+        .secondary-nav-wrap {
+            margin-top: 81px;
+        }
+        .container {
+            width: 100%;
+        }
+        .input-search {
+            border-top: 1px solid #ccc;
+            margin-top: 7px;
+            padding: 15px 10px;
+            input[type="search"] {
+                position: relative;
+            }
+            .input-group-btn {
+                position: absolute;
+                font-size: 0;
+                white-space: nowrap;
+                right: 10px;
+                top: 15px;
+                width: 32px;
+                height: 44px;
+                .btn {
+                    padding: 0px;
+                    right: 0px;
+                    top: 0px;
+                    width: 33px;
+                    height: 44px;
+                    border-top: 0px;
+                    border-bottom: 0px;
+                }
+            }
+        }
+        .navbar-toggler-right {
+            position: relative;
+            right: auto;
+        }
+        .mobile-menu {
+            float: right;
+            margin-bottom: 0px;
+            li {
+                float: left;
+                list-style: none;
+                button {
+                    padding: 25px;
+                    min-height: 80px;
+                    cursor: pointer;
+                }
+                .navbar-search {
+                    background-color: #fff;
+                    border-top: 0px;
+                    border-bottom: 0px;
+                    border-right: 0px;
+                    border-left: 1px solid #ccc;
+                    i {
+                        font-size: 22px;
+                        color: #262626;
+                    }
+                }
+                .navbar-toggler-right {
+                    background-color: #ff6700;
+                    border: 0px;
+                    border-radius: 0px;
+                    color: #fff;
+                }
+            }
+        }
+        #navbarSupportedContent {
+            border-top: 1px solid rgb(204, 204, 204);
+            width: 100%;
+            margin-top: 7px;
+            background: #ff6700;
+        }
+    }
+    .card-mk {
+        min-height: 250px;
+        img {
+            max-height: 90px;
+        }
+        h4 {
+            font-size: 16px;
+            font-size: 1rem;
+        }
+    }
+    .right-border {
+        &:after {
+            right: 3%;
+        }
+    }
+    .login-form {
+        form {
+            padding-right: 1.5em;
+        }
+        .create-account {
+            padding-left: 1.5em;
+        }
+    }
+    .dashboard-profile {
+        background-color: #fff !important;
+        padding: 40px 10px !important;
+        .profile-info {
+            margin-left: 0px;
+        }
+        .profile-address {
+            margin-bottom: 30px;
+        }
+        .profile-image {
+            padding: 0px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .dashboard-profile .flex-profile .row>div:first-child {
+        height: auto !important;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d4d4d4;
+        margin-bottom: 10px;
+    }
+    .dashboard-box-content {
+        >.row {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        padding: 0px !important;
+        .form-group {
+            padding-top: 12px;
+            .box-input-element {
+                border: 0px;
+                padding: 6px 0px;
+            }
+            label {
+                color: $job-seeker-dark;
+                font-weight: bold;
+                margin-bottom: 0px;
+            }
+            .fa-eye {
+                font-size: 1.5rem;
+                padding-top: 1rem;
+            }
+        }
+        &.box-color-even {
+            background-color: #f2f2f2 !important;
+        }
+    }
+    .box-line {
+        width: 100%;
+        border: 1px solid #e9e9e9;
+        &.space-bottom {
+            margin-bottom: 30px;
+        }
+    }
+    .application-details .box-content,
+    .responsibilities-mobile .box-content:nth-child(n+3):not(.box-color-even) {
+        border-color: #00bbb9;
+    }
+    .top-header.top-header-fix {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hidden-md-up {
+        display: none;
+    }
+    .testimonial {
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        height: 420px;
+    }
+    .hidden-sm-down {
+        display: none;
+    }
+    .right-border {
+        &:after {
+            display: none;
+        }
+    }
+    .vertical-center-row {
+        max-width: 100%;
+    }
+    .card-mk {
+        margin-bottom: 15px;
+        min-height: 200px;
+        img {
+            float: left;
+            padding-left: 15%;
+        }
+        h4 {
+            padding-left: 40%;
+            text-align: left;
+        }
+    }
+    .corporate {
+        text-align: center;
+        .corporate-user,
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    .step-text {
+        max-width: 360px;
+        margin: 0 auto;
+        border-top: 2px solid #e5e5e5;
+        padding-top: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .stage-container {
+        .stage-content {
+            display: none;
+        }
+    }
+    .step-controller h1 {
+        font-size: 26px;
+    }
+    .row-steps {
+        margin-bottom: 0px;
+    }
+    .login-form {
+        padding-top: 0;
+        margin-bottom: -5.65rem;
+        .row {
+            &> :first-child {
+                border-right: none;
+            }
+            &> :last-child {
+                background-color: #f2f2f2;
+            }
+        }
+        form,
+        .create-account {
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+        }
+        form {
+            padding-bottom: 3em;
+        }
+        .create-account {
+            padding-top: 4em;
+            padding-bottom: 4em;
+            .btn-primary {
+                top: 0;
+            }
+        }
+    }
+    .secondary-nav-wrap {
+        display: none;
+    }
+    .newjob {
+        margin-top: -8.65rem;
+        padding-top: 6rem !important;
+    }
+    .sidebar {
+        .card-body img {
+            margin-bottom: 15px;
+            float: none;
+            padding-left: 0;
+        }
+    }
+    .form-section {
+        table tr td {
+            padding-right: 10px;
+            vertical-align: text-bottom;
+            font-size: 12px;
+        }
+        .col-xs-4 {
+            width: 33%;
+        }
+        .col-md-6:last-child h6 {
+            margin-top: 30px;
+        }
+        label {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    .idea:before {
+        top: 0px;
+    }
+    .bottom-border {
+        margin-bottom: 4rem;
+        padding-top: 3rem;
+    }
+    .change-mobile-position .row {
+        display: flex;
+    }
+    .change-mobile-position>.container>.row>div:last-child {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    .change-mobile-position>.container>.row>div:first-child {
+        order: 2;
+    }
+    .same-height .row>div {
+        display: block;
+    }
+    .card-mk {
+        .package {
+            .price {
+                text-align: center;
+            }
+            h4 {
+                text-align: center;
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .box-item-elemnt {
+        max-width: 200px;
+        text-align: left;
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .box-content {
+        .text-right {
+            .box-item-elemnt {
+                float: right;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .testimonial {
+        height: 425px;
+    }
+    .sidebar {
+        margin-top: 50px;
+        .card.card-gray {
+            border: 3px solid #dedede;
+        }
+    }
+    .mobile-center {
+        text-align: center;
+    }
+    .bottom-border {
+        border-bottom: 0px !important;
+        margin-bottom: 0px;
+    }
+    .bottom-button {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            display: block;
+            &:first-child {
+                border: none;
+                color: #ff6700;
+                font-weight: normal;
+                font-style: normal;
+                text-decoration: underline;
+                font-size: 14px;
+                order: 2;
+            }
+            &:last-child {
+                order: 1;
+            }
+        }
+    }
+    .change-mobile-position .sidbar {
+        margin-top: 0px;
+    }
+    .hidden-col {
+        display: none;
+    }
+    .job-description {
+        margin-top: 30px;
+        margin-bottom: 30px !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .testimonial {
+        height: 455px;
+    }
+    .card-mk {
+        min-height: 130px;
+        .card-body {
+            padding-top: 15px;
+            h4 {
+                padding-left: 50%;
+            }
+        }
+    }
+    .header .navbar-brand {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial {
+        height: 500px;
+    }
+    .card-mk .package {
+        padding: 25px !important;
+    }
+    .same-height .card.card-gray {
+        border: 3px solid #dedede;
+    }
+    .job-posted .col-3 {
+        -ms-flex: 0 0 35%;
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+    .job-posted .col-9 {
+        -ms-flex: 0 0 65%;
+        flex: 0 0 65%;
+        max-width: 65%;
+    }
+}
+
+@media (max-width: 420px) {
+    .testimonial {
+        height: 550px;
+    }
+}
+
+@media (max-width: 375px) {
+    .testimonial {
+        height: 620px;
+    }
+}

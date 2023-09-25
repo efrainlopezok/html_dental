@@ -1,0 +1,65 @@
+.login-form {
+    padding-top: 6em;
+
+    .row {
+        & > :first-child {
+            border-right: 1px solid #e5e5e5;
+        }
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 1em;
+        font-weight: normal;
+    }
+
+    .login-col {
+        .btn-primary {
+            border: 0px;
+            cursor: pointer;
+            background-color: #ff6700;
+            width: 100%;
+            color: #fff;
+            border-radius: 0px;
+            padding: 22px 22px;
+            font-size: 22px;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+                background-color: #f18e4b;
+            }
+            margin-bottom: 22px;
+        }
+    }
+
+    form {
+        padding-right: 3.5em;
+        padding-left: 8em;
+        padding-bottom: 7em;
+        input,
+        select {
+            padding: 12px 22px;
+            border: 1px solid #cccccc;
+            border-radius: 0px;
+            font-size: 16px;
+            color: #8b8b8b;
+            font-family: $font-family;
+            height: 60px !important;
+        }
+        .already-registered {
+            a {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .create-account {
+        padding-left: 3.5em;
+        padding-right: 8em;
+
+        .btn-primary {
+            position: relative;
+            top: 152px;
+        }
+    }
+}

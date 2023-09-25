@@ -1,0 +1,366 @@
+.section-hero {
+    margin-top: -15px;
+    background-color: #f4632f;
+    min-height: 682px;
+    margin-top: -15px;
+    position: relative;
+    h1 {
+        color: #fff;
+        font-size: 80px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .lead {
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .hero-image {
+        position: absolute;
+        background-image: url("../images/girl.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        bottom: 0;
+        height: 90%;
+        right: 5rem;
+        width: 700px;
+    }
+    .btn-black {
+        border: 3px solid #262626;
+        color: #fff;
+        padding: 18px 10px;
+        text-decoration: none;
+        border-radius: 0px;
+        min-width: 200px;
+        min-height: 70px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    @media (max-width: 1200px) {
+        &.section-hero {
+            margin-top: -25px;
+        }
+    }
+    @media (max-width: 1072px) {
+        &.section-hero {
+            margin-top: -38px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .container {
+            z-index: 4;
+        }
+        .hero-image {
+            right: 20px;
+            height: 80%;
+        }
+    }
+    @media (max-width: 991px) {
+        &.section-hero {
+            margin-top: -60px;
+        }
+        min-height: 500px;
+        h1 {
+            font-size: 70px;
+            letter-spacing: 0.07em;
+        }
+        .lead {
+            max-width: 65%;
+        }
+        .hero-image {
+            background-size: auto 100%;
+            background-position: bottom left;
+            right: 0;
+            width: 40%;
+        }
+    }
+    @media (max-width: 767px) {
+        min-height: 440px;
+        .hero-image {
+            background-image: url("../images/girl-mobile.png");
+            background-position: right bottom;
+            height: 98%;
+            width: 60%;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        .lead {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 352px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+.section-get-started {
+    h2 {
+        font-size: 42px;
+        font-weight: 600px;
+        padding-bottom: 60px;
+        color: #262626;
+    }
+    .col-feature {
+        img {
+            margin-bottom: 30px;
+        }
+        a {
+            text-decoration: initial;
+            color: #262626;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.section-about {
+    background-image: url("../images/about-dental-post-bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 900px;
+    .about-content {
+        background-color: #fff;
+        padding: 4rem 3rem;
+        max-width: 390px;
+        h2 {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-size: 18px;
+            line-height: 35px;
+            color: #262626;
+        }
+        .btn-black {
+            border: 3px solid #262626;
+            color: #262626;
+            padding: 18px 10px;
+            text-decoration: none;
+            border-radius: 0px;
+            min-width: 220px;
+            min-height: 60px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+    @media (max-width: 991px) {
+      background-position: center left;
+    }
+    @media (max-width: 400px) {
+        background-color: #ebecec;
+        .about-content {
+            padding-left: 40px;
+            padding-right: 40px;
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 340px) {
+        .about-content {
+            max-width: calc(100% - 20px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.section-testimonial {
+    background-color: #00bbb9;
+    .carousel {
+        max-width: 859px;
+        margin: 0 auto 154px;
+        .carousel-indicators {
+            bottom: 25px;
+            li {
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid #989898;
+                margin-right: 10px;
+                padding: 0;
+                width: 9px;
+                max-width: 9px;
+                height: 9px;
+                &.active {
+                    background-color: #ff8300;
+                    border-color: #ff8300;
+                }
+            }
+        }
+        .carousel-item {
+            padding-top: 165px;
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+            background-color: #fff;
+            box-shadow: 0px 13px 65px rgba(0, 0, 0, 0.09);
+            height: 78px;
+            width: 78px;
+            opacity: 1;
+            top: 56%;
+            span {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 11.5px 20px 11.5px 0;
+                border-color: transparent #00bbb9 transparent transparent;
+            }
+        }
+        .carousel-control-prev {
+            left: -36px;
+        }
+        .carousel-control-next {
+            right: -36px;
+            span {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .testimonial {
+        padding: 0 20px;
+        padding-bottom: 75px;
+        background-color: #fff;
+        position: relative;
+        width: 100%;
+        picture {
+            background-color: #eaeaea;
+            border-radius: 50%;
+            display: block;
+            overflow: hidden;
+            margin: -83px auto 35px;
+            height: 166px;
+            width: 166px;
+            img {
+                margin: 0 auto;
+            }
+        }
+        blockquote {
+            max-width: 629px;
+            margin: 0 auto;
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        cite {
+            font-size: 17.68px;
+            font-style: normal;
+            font-weight: 600;
+            display: block;
+            text-align: center;
+        }
+    }
+    @media (max-width: 991px) {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .carousel {
+            margin-bottom: 70px;
+            .carousel-item {
+                padding-top: 105px;
+            }
+            .carousel-control-next,
+            .carousel-control-prev {
+                height: 60px;
+                width: 60px;
+                span {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 9px 15px 9px 0;
+                    border-color: transparent #ff8300 transparent transparent;
+                }
+            }
+            .carousel-control-prev {
+                left: -19px;
+            }
+            .carousel-control-next {
+                right: -19px;
+                span {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .testimonial {
+            padding-left: 48px;
+            padding-right: 48px;
+            blockquote {
+                text-align: center;
+            }
+            picture {
+                height: 126px;
+                width: 126px;
+                margin-top: -63px;
+            }
+        }
+    }
+    @media (max-width: 375px) {
+        background: url(../images/testimonial-mobile-bg.jpg) scroll 0 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+.section-signup {
+    background-image: url("../images/boy-bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    min-height: 660px;
+    @media (max-width: 991px) {
+        background-image: url("../images/signup-mobile-bg.jpg");
+        background-position: center bottom;
+        background-size: auto;
+        min-height: auto;
+        padding-top: 65px;
+        padding-bottom: 192px;
+        text-align: center;
+        &.justify-center {
+            display: block;
+        }
+    }
+}
+
+// Common typography for home content
+.home-content-typo {
+    .heading {
+        font-weight: 600;
+        font-size: 2.25rem;
+        margin-bottom: 1.5rem;
+        &.big-heading {
+            font-size: 2.625rem;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 35px;
+        color: #262626;
+        margin-bottom: 40px;
+    }
+    @media (max-width: 991px) {
+        .heading.big-heading {
+            font-size: 36px;
+        }
+    }
+}
+
+.justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-space {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

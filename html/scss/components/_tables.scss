@@ -1,0 +1,57 @@
+
+/* Default table striped */
+
+.table-striped {
+
+  thead  {
+    tr {
+      background-color: #fff;
+
+      th {
+        border-bottom: 0 none;
+      }
+    }
+  }
+
+  th, td {
+    border: 0 none;
+  }
+
+  th {
+    color: #000;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    height: 48px;
+  }
+
+  td {
+    color: #000;
+    font-size: 0.8125rem;
+    height: 40px;
+  }
+
+  tbody {
+    tr:nth-of-type(odd) {
+      background-color: #f2f2f2;
+    }
+    tr:nth-of-type(even) {
+      background-color: #fff;
+    }
+  }
+}
+
+
+// extension to all tables with .table
+.table {
+  td {
+    &.valign-center {
+      vertical-align: middle;
+    }
+  }
+
+  tr.unborder {
+    td {
+      border: 0 none;
+    }
+  }
+}

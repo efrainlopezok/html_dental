@@ -1,0 +1,170 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 0.9rem;
+  font-size: 0.875rem;
+}
+
+a {
+  color: $color-site;
+  text-decoration: underline;
+
+  &.link-lg {
+    font-size: 1rem;
+  }
+
+  &.link-sm {
+    font-size: 0.8125rem;
+  }
+
+  &.black-link {
+    color: #262626;
+  }
+}
+
+a, span {
+  &.simple-link {  // when nested, removes backagrounds and borders
+    background: transparent !important;
+    border: 0 none !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    padding: initial !important;
+    color: #ff6700 !important;
+    text-decoration: none !important;
+    font-size: 0.875rem !important;
+    cursor: pointer;
+  }
+}
+
+.header {
+  border-bottom: 1px solid #cccccc;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1600px;
+}
+
+.site-inner {
+  display: flex;
+  flex-direction: column;
+  /* min-height: calc(100% - 82px); */
+  padding-top: 140px;
+  padding-top: 8.65rem;
+  padding-bottom: 90px;
+  padding-bottom: 5.65rem;
+  margin: 0 auto;
+}
+
+.wrap {
+  max-width: 940px;
+}
+
+.row-space {
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+// Colors
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+
+.bg-green {
+    background-color: #83bf23;
+}
+
+.bg-lime-green {
+  background-color: #cbe89d !important;
+}
+
+.bottom-button {
+  padding: 4rem;
+  margin-bottom: -5.65rem;
+  a {
+    padding: 20px 30px;
+    border: 3px solid #bdbdbd;
+    color: #262626;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+
+.packages-buttons {
+  background: #f2f2f2;
+}
+
+.float-image {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #82bf22;
+  margin-top: 3rem;
+}
+
+.border-r {
+  border-right: 1px solid #d9d9d9;
+}
+
+.job-posted .row {
+  margin-bottom: 5px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-rioght: auto;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.relative {
+  position: relative
+}
+
+.green-btm-shadow {
+  box-shadow: 0 27px 10px rgba(203,232,157,0.35);
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
